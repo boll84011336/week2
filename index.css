@@ -1,12 +1,275 @@
-.container {
-
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+/* 共同樣式 */
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
 }
 
-.header {
-    padding: 52px 312px;
-    background-color: black;
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+header {
+  background-color: black;
+  color:#D1D1D1;
 }
 
 .navbar {
-    display: flex;
+  padding: 52px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.block1 {
+  padding-top: 72px;
+  padding-bottom: 32px;
+  display: flex;
+  padding-left: 312px;
+  padding-right: 312px;
+}
+
+.people_img {
+  margin-right: 24px;
+}
+
+.people_img img {
+  vertical-align: middle;
+}
+
+.font {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 636px;
+}
+
+.font h1 {
+  font-size: 128px;
+  line-height: 192px;
+  color:#00FFA3;
+  text-align: end;
+}
+
+.font h2 {
+  font-size: 64px;
+  line-height: 96px;
+  color: #FFFFFF;
+}
+
+.contact {
+  display: flex;
+  justify-content: end;
+}
+
+.contact button {
+  width: 185px;
+  height: 48px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 32px;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact a {
+  margin-right: 4px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.block2 {
+  background-image: url("./img/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1920px; /* 不知道為什麼填不滿 所以寫死*/
+}
+
+.intro_block {
+  display: flex;
+  padding: 160px 313px 318px 312px;
+}
+
+.text {
+  width: 526px;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#FFFFFF;
+  margin-right: 24px;
+}
+
+
+.text h2 {
+  font-size: 64px;
+  margin-bottom: 36px;
+  line-height: 96px;
+}
+
+.text span {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.sparkle_sms {
+  display: flex;
+}
+
+.sparkle_sm {
+  vertical-align: middle;
+  height: 98px;
+}
+
+
+.photo {
+  display: flex;
+  width: 746px;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+
+.block3 {
+  width: 1920px;
+  background-color:#FFFFFF;
+  font-family: "Bruno Ace SC", sans-serif;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.about {
+  display: flex;
+  padding: 160px 312px 160px 312px;
+}
+
+.content {
+  width: 636px;
+  margin-right: 134px;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .box {
+  width: 306px;
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+}
+
+.content .number, .content .title {
+  font-size: 20px;
+  /* line-height: 30px; */
+}
+
+.content .desc {
+  /* line-height: 24px; */
+}
+
+.about_me {
+  width: 526px;
+}
+
+.about_me .title {
+  font-size: 64px;
+  /* line-height: 96px; */
+  margin-bottom: 36px;
+}
+
+.about_me .desc {
+  font-size: 24px;
+  /* line-height: 36px; */
+}
+
+.block4 {
+  width: 1920px;
+  background-color: #050014 100%;
+}
+
+.block4 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.blue_img {
+  display: flex;
+  align-items: center;
+  padding: 129px 312px;
+}
+
+.contact_me_blue {
+  width: 657px;
+  margin-right: 113px;
+  display: flex;
+}
+
+.blue_img .title {
+  font-size: 64px;
+  line-height: 96px;
+  margin-right: 16px;
+  color:#FFFFFF;
+  font-family: "Bruno Ace SC", sans-serif;
+}
+
+.blue_img .arrow {
+  width: 100px;
+}
+
+.photo_img img {
+  width: 162px;
+  height: 162px;
+}
+
+.photo_img {
+  display: flex;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+  /* outline: solid 1px; */
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+
+
+/* layout */
+.header {
+  background-color: #000;
+  color: #D1D1D1;
+  padding: 40px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  background-color: #000;
+  color: #D1D1D1;
+  padding: 40px 0;
+}
+
+/* component */
+.btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+
+.btn-light {
+  background: white;
+  color:#000;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* page */
+.banner {
+  background-color: #000;
+  color: #FFFFFF;
+}
+
+.font {
+  margin-left: 24px;
+  width: 636px;
+}
+
+/* 背景不建議設定高度，建議用內容跟padding撐開 比較不會造成破版 */
+.intro {
+  background-image: url("img/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* 填滿容器 */
+  padding: 160px 0;
+}
+
+.intro_text {
+  width: 526px;
+  color:#FFFFFF;
+}
+
+.intro_text .text {
+  display: inline-block;
+  margin-top: 36px;
+}
+
+.sparkle_sms {
+  margin-top: 32px;
+}
+
+.about {
+  padding: 160px 0; /* p160-0 */
+}
+
+.about-list {
+  width: 636px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 24px;
+}
+
+.about-list li {
+  width: calc(50% - 12px);
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.08);
+}
+
+.about-desc {
+  width: 526px;
+}
+
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+}
+
+.social-link {
+  border-radius: 40px;
+}
+
+.social-link:hover {
+  box-shadow: 0px 0px 16px 3px #9094FFE5;
+  transition: 0.3s;
+}
+
+/* .contact_title {
+  width: 657px;
+} */
+
+.photo_img {
+  width: 526px; 
+}
+
+/* 這邊設置外容器寬度沒用，因為會被箭頭推擠跑版，所以改設定內容寬度*/
+.contact_me {
+  width: 541px;
+}
+
+.project {
+  padding: 160px 0;
+}
+
+.project_title {
+  width: 746px;
+  margin-left: auto;
+}
+
+.gap24 {
+  gap: 24px;
+}
+
+.gap28 {
+  gap: 28px;
+}
+
+/* utils */
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-size: 128px;
+}
+
+.h2 {
+  font-size: 64px;
+}
+
+.fs-1 {
+  font-size: 32px;
+}
+
+.fs-2 {
+  font-size: 24px;
+}
+
+.fs-3 {
+  font-size: 20px;
+}
+
+.text-primary {
+  color: #00ffa3;
+}
+
+.d-flex {
+  display: flex; 
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-right {
+  text-align: right; 
+  /* 使用這個的時候要確認父元素有足夠寬度，或是該標籤有足夠寬度讓文字靠右
+  一開始失效是元素沒寬度 */
+}
+
+.mr-4 {
+  margin-right: 16px;
+}
+
+.mr-5 {
+  margin-right: 20px;
+}
+
+.mr-6 {
+  margin-right: 24px;
+}
+
+.mb4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mb-7 {
+  margin-bottom: 28px;
+}
+
+.font_white {
+  color:white;
+}
+
+

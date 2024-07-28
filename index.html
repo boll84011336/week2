@@ -6,119 +6,156 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar container">
-      <a href="#">WILLIAM LEE</a>
-      <a href="#">BASED IN TAIWAN</a>
-      <a href="#">CURRENTLY FRONT END <br> ENGINEER AT HEXSCHOOL</a>
-      <a href="#">CONTACT ME</a>
-    </nav>
+  <!-- header -->
+  <header class="header">
+    <ul class="nav container">
+      <li>WILLIAM LEE</li>
+      <li>BASED IN TAIWAN</li>
+      <li>CURRENTLY FRONT END <br> ENGINEER AT HEXSCHOOL</li>
+      <li>CONTACT ME</li>
+    </ul>
   </header>
-  <div class="container">
-    <div class="block1">
-      <div class="people_img">
-        <img src="./img/people.png" alt="people">
-      </div>
+  <!-- banner -->
+  <div class="banner">
+    <div class="container d-flex align-items-center">
+      <img src="./img/people.png" alt="people">
       <div class="font">
-        <h2>HI</h2>
-        <h2>I’m a front-end</h2>
-        <h2>developer</h2>
-        <h1>William</h1>
-        <div class="contact">
-          <button>
-            <a href="#">contact me</a>
+        <h2 class="h2">
+          HI <br />
+          I’m a front-end <br />
+          developer
+        </h2>
+        <h1 class="h1 text-primary text-right">William</h1>
+        <div class="d-flex justify-content-end">
+
+          <a href="#" class="btn btn-light">contact me
             <img src="./img/arrow_outward.png" alt="arrowOutward">
-          </button>
+          </a>
         </div>
       </div>
     </div>
-
-    <div class="block2">
-      <div class="intro_block">
-        <div class="text">
-          <h2>Introduction</h2>
-          <span>
-            Hi, I'm William Lee, a Front-End Developer
-            with a passion for building beautiful and
-            responsive websites that provide an optimal user experience.
-          </span>
-          <div class="sparkle_sms">
-            <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
-            <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
-            <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
-          </div>
-        </div>
-        <div class="photo">
-          <div class="sparkle mr24"><img src="./img/sparkle.png" alt="sparkle"></div>
-          <div class="photographer mr24"><img src="./img/photographer.png" alt="photographer"></div>
-          <div class="people_2"><img src="./img/people-2.png" alt="people_2"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="block3">
-      <div class="about">
-        <div class="content">
-          <div class="box mr24 mb24">
-            <div class="number mb4">01</div>
-            <div class="title mb4">Attention to Detail</div>
-            <div class="desc">Meticulous code analysis and optimization.</div>
-          </div>
-          <div class="box mb24">
-            <div class="number mb4">02</div>
-            <div class="title mb4">Adaptability</div>
-            <div class="desc">Swift learning of new technologies.</div>
-          </div>
-          <div class="box mr24">
-            <div class="number mb4">03</div>
-            <div class="title mb4">Problem Solver</div>
-            <div class="desc">Identifying and resolving issues.</div>
-          </div>
-          <div class="box">
-            <div class="number mb4">04</div>
-            <div class="title mb4">Team Player</div>
-            <div class="desc">Collaborates and shares ideas.</div>
-          </div>
-        </div>
-
-        <div class="about_me">
-          <div class="title">About Me</div>
-          <div class="desc">
-            With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong
-            understanding of user experience design and accessibility. I'm always learning new technologies and
-            techniques to stay up-to-date in the field.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="block4">
-      <div class="blue_img">
-        <div class="contact_me_blue">
-          <div class="title">
-            CONTACT ME
-          </div>
-          <div class="arrow">
-            <img src="./img/trending_flat_black_24dp 1.png" alt="trending">
-          </div>
-        </div>
-        <div class="photo_img">
-          <img class="mr20" src="./img/discord.png" alt="discord">
-          <img class="mr20" src="./img/instagram.png" alt="instagram">
-          <img src="./img/message.png" alt="message">
-        </div>
-      </div>
-    </div>
-
   </div>
-  <footer></footer>
+
+  <!-- intro -->
+  <!-- 為什麼這邊的container 不能像banner一樣直接設定align-items-center好像右邊圖片會不吃 -->
+  <div class="intro">
+    <div class="container d-flex ">
+      <div class="intro_text mr-6">
+        <h2 class="h2">Introduction</h2>
+        <span class="fs-2 text">
+          Hi, I'm William Lee, a Front-End Developer
+          with a passion for building beautiful and
+          responsive websites that provide an optimal user experience.
+        </span>
+        <div class="sparkle_sms d-flex">
+          <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
+          <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
+          <div class="sparkle_sm"><img src="./img/sparkle-sm.png" alt="sparkle_sm"></div>
+        </div>
+      </div>
+      <div class="photo d-flex">
+        <div class="sparkle mr-6"><img src="./img/sparkle.png" alt="sparkle"></div>
+        <div class="photographer mr-6"><img src="./img/photographer.png" alt="photographer"></div>
+        <div class="people_2"><img src="./img/people-2.png" alt="people_2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div class="about">
+    <div class="container d-flex justify-content-between align-items-center">
+      <ol class="about-list d-flex">
+        <li>
+          <p class="fs-3">01</p>
+          <h3 class="fs-3">Attention to Detail</h3>
+          <p>Meticulous code analysis and optimization.</p>
+        </li>
+        <li>
+          <p class="fs-3">02</p>
+          <h3 class="fs-3">Adaptability</h3>
+          <p>Swift learning of new technologies.</p>
+        </li>
+        <li>
+          <p class="fs-3">03</p>
+          <h3 class="fs-3">Problem Solver</h3>
+          <p>Identifying and resolving issues.</p>
+        </li>
+        <li>
+          <p class="fs-3">04</p>
+          <h3 class="fs-3">Team Player</h3>
+          <p>Collaborates and shares ideas.</p>
+        </li>
+      </ol>
+      <div class="about-desc">
+        <h2 class="h2">About Me</h2>
+        <p class="fs-2">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I
+          have a strong
+          understanding of user experience design and accessibility. I'm always learning new technologies and
+          techniques to stay up-to-date in the field.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div class="contact">
+    <div class="container d-flex justify-content-between">
+      <div class="contact_title d-flex align-items-center">
+        <h2 class="contact_me font_white h2 mr-4">CONTACT ME</h2>
+        <img class="trending" src="./img/trending_flat_black_24dp 1.png" alt="trending">
+      </div>
+      <div class="photo_img d-flex justify-content-between">
+        <a href="#" class="social-link"><img class="mr20" src="./img/discord.png" alt="discord"></a>
+        <a href="#" class="social-link"><img class="mr20" src="./img/instagram.png" alt="instagram"></a>
+        <a href="#" class="social-link"><img src="./img/message.png" alt="message"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- project -->
+  <div class="project">
+    <div class="container">
+      <h2 class="h2 project_title mb4"> My Projects</h2>
+      <div class="d-flex gap24">
+        <img src="img/Rectangle 10.png" alt="" />
+        <div>
+          <div class="top d-flex mb-7">
+            <img class="mr-6" src="img/Rectangle 15.png" alt="" />
+            <div class="d-flex flex-column justify-content-between align-items-start">
+              <p>
+                I've worked on a variety of websites, including e-commerce
+                sites, blogs, and landing pages. I take pride in
+                creating clean, efficient, and user-friendly code.
+              </p>
+              <a href="#" class="btn btn-dark">
+                SEE MORE
+                <img src="./img/arrow_outward-white.png" alt="arrow" />
+              </a>
+            </div>
+          </div>
+          <div class="bottom">
+            <img class="mr-4" src="img/Rectangle 14.png" alt="" />
+            <img src="img/Rectangle 29.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container d-flex justify-content-center">
+      <div class="text fs-2">
+        all rights reserved @hexschool2023
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
